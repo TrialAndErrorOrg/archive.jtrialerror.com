@@ -1199,7 +1199,7 @@
 }{}
 
 %Append all the necessecary things after the references (license, copyright, acknowledgements)
-\RequirePackage{wrapfig}
+%\RequirePackage{wrapfig}
 %\pretocmd{\printbibliography}{\fontsize{\normsize}{\normline}\selectfont}{}{}
 \apptocmd{\printbibliography}{%
     \ifdefempty{\@companionkey}{}{
@@ -1251,7 +1251,7 @@
 \setlength{\parskip}{0pt}
 
 % This will give you MUCH more useful errors
-\setcounter{errorcontextlines}{30}
+\setcounter{errorcontextlines}{50}
 
 %\normalsize
 \pagestyle{fancy}
