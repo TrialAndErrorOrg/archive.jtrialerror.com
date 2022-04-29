@@ -922,7 +922,7 @@
     \@funding\vskip\smallwidth
 }%
 {\openreg License}\ \  \faIcon{creative-commons}\  \faIcon{creative-commons-by}\\
-  {\color{darklightblack}This article is licensed under the {\openreg\href{https://www.creativecommons.org/licenses/by-nc-nd/4.0/legalcode}{Creative Commons Attirbution 4.0 (CC-BY 4.0)}} license, which allows you to copy, redistribute, transform and build upon the article and all its contents in any medium or format for any purpose, provided that appropriate credit is given.}
+  {\color{darklightblack}This article is licensed under the {\openreg\href{https://www.creativecommons.org/licenses/by-nc-nd/4.0/legalcode}{Creative Commons Attribution 4.0 (CC-BY 4.0)}} license, which allows you to copy, redistribute, transform and build upon the article and all its contents in any medium or format for any purpose, provided that appropriate credit is given.}
   
     \textcopyright\space \@runningauthor\ \@jyear\\
 
@@ -1253,6 +1253,9 @@
 % This will give you MUCH more useful errors
 \setcounter{errorcontextlines}{50}
 
+\AtBeginDocument{
+    \pdfbookmark[0]{\@runningauthor, \@jotetitle}{\@runningauthor}
+}
 %\normalsize
 \pagestyle{fancy}
 \AtBeginDocument{%
